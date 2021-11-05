@@ -8,6 +8,32 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <header>
+        <div class="inner-container">
+            <h1>HTML5 Forms</h1>
+        </div>
+    </header>
+   <div class="inner-container">
+    <form action="#" method="POST">
+        <!-- 
+            - Every input requires a label (label/input pair). The 'for' and 'id'     attributes always have to match.
+            - input elements are self-closing tags
+        -->
+        <!-- text input -->
+        <div>
+            <label for="text-field">Generic Text Field</label>
+            <input type="text" id="text-field" name="text-field" placeholder="First & Last Name" />
+        </div>
+
+        <div>
+            <label for="email">Email Field</label>
+            <input type="email" id="email" name="email" placeholder="email address"/>
+            <!-- input type="email" is better than using text. when an user is inputting their email the browser look for an @ symbol and '.xx' -->
+            </div>
+    </form>
+
+   </div>
+    
     
 </body>
 </html>
