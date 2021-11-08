@@ -1,2 +1,52 @@
 /* CSS Variables - https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
 
+html {
+    font-size: 100%;
+    background-color: #efefef;
+}
+
+body {
+    font-size: 1.125rem;/** 18px **/
+    color: #222;
+    font-family: sans-serif;
+}
+
+/** header **/
+header {
+    margin: 1.875rem 0; /*30px 0 */
+    text-align: center;
+    color: #1e1e1e;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+/** global structural elements **/
+.inner-container {
+    max-width: 50rem; /** 800px **/ 
+    margin: auto;
+}
+
+/** Form **/
+
+/** remove the default fieldset styles **/
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    max-width: 37.5rem; /**600px**/
+    margin: auto;
+}
+
+/** the majority of form elements are inline elements, so have the labels sit above the inputs we need to change them to block **/
+label {
+    display: block;
+}
+
+input,
+select,
+textarea {
+    width: 37.5rem;
+}
