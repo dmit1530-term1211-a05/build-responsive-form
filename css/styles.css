@@ -50,3 +50,56 @@ select,
 textarea {
     width: 37.5rem;
 }
+
+form div,
+fieldset {
+    margin-bottom: 1.875rem; /*30px*/
+}
+
+fieldset div {
+    margin-bottom: 0.625rem;
+}
+
+textarea {
+    resize: vertical; /** other value are horizontal, both and none */
+    min-width: 37.5rem;
+    max-width: 37.5rem;
+    min-height: 5rem; 
+}
+
+/** target only the radio and checkbox fields **/
+input[type=radio],
+input[type=checkbox] {
+    /** set the width back to it's normal default **/
+    width: auto; /* or initial*/
+}
+
+/** to place the labels beside the radio buttons and checkboxes you can either flex or your can put the labels back to their natural state using display:inline or inline-block **/
+
+label[for="spain"],
+label[for="maui"], 
+label[for="trinidad"],
+label[for="html"],
+label[for="css"],
+label[for="js"] {
+    display:inline;
+}
+
+/** targeting the submit button **/
+input[type=submit] {
+    width: 12.5rem; /*200px*/
+    display: block;
+    margin: auto;
+    background-color: #1e1e1e;
+    border: 1px solid #1e1e1e;
+    border-radius: 3px;
+    color: pink;
+    transition: all 0.3s ease-in-out;
+
+}
+
+input[type=submit]:hover {
+    background-color: pink;
+    border: 1px solid pink;
+    color: #1e1e1e;
+}
